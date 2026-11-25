@@ -1,0 +1,10 @@
+Algorithm,InputSize,OptimizedMedianMs,BaselineMedianMs,Notes
+MaxHeap top-100,1000,0.3844,0.7966,heap build + 100 extracts versus full sort
+MaxHeap top-100,10000,0.6233,2.1977,heap build + 100 extracts versus full sort
+MaxHeap top-100,50000,9.3849,13.0039,heap build + 100 extracts versus full sort
+Trie prefix lookup x500,1000,1.7837,32.3029,indexed prefix query versus 500 linear scans; build excluded
+Trie prefix lookup x500,10000,0.3266,32.1015,indexed prefix query versus 500 linear scans; build excluded
+Trie prefix lookup x500,50000,0.3026,146.2556,indexed prefix query versus 500 linear scans; build excluded
+SegmentTree range query x5000,1000,0.0343,1.6171,indexed range sum versus linear scan; build excluded
+SegmentTree range query x5000,10000,0.0347,14.9517,indexed range sum versus linear scan; build excluded
+SegmentTree range query x5000,50000,0.0354,72.2541,indexed range sum versus linear scan; build excluded

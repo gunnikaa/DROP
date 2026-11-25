@@ -1,0 +1,5 @@
+DROP API smoke test — latest owner listings source
+
+The Windows API smoke script passed on 2026-11-25 for health/CORS, the Vite `/api` proxy, customer and owner registration, owner-only listing scope, admin listing review, event publication and duplicate rejection, booking ownership and 8% fee calculation, overlapping booking rejection, owner approval, demo listing booking rejection, and customer denial from admin routes.
+
+The live Overpass check was attempted against the configured public instance and returned HTTP 503 during this run. The API reports the upstream failure and the UI displays it; a live OSM result set could not be verified in this environment. The endpoint remains configurable with `DROP_OVERPASS_URL`.
